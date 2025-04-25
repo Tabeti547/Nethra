@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
@@ -20,7 +19,7 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              AI-Powered Security Services for a Safer Tomorrow
+              Nethra Security Services for a Safer Tomorrow, Powered by Technology
             </h1>
             <p className="text-xl text-white/90 mb-8">
               Nethra Security Services pioneers the future of security by integrating advanced AI technology 
@@ -34,6 +33,19 @@ const Index = () => {
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technology Showcase Section */}
+      <section className="py-16 bg-nethra-light">
+        <div className="container mx-auto px-4">
+          <div className="rounded-lg overflow-hidden shadow-xl">
+            <img 
+              src="/lovable-uploads/67bf9b33-8e2d-4971-b465-3f3f176ee571.png"
+              alt="Nethra Security Monitoring Center"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </section>

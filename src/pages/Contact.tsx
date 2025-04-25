@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -74,24 +73,19 @@ const Contact = () => {
                 <div className="mb-6">
                   <h3 className="text-lg font-semibold text-nethra-navy mb-2">Business Hours</h3>
                   <p className="text-nethra-gray mb-1">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p className="text-nethra-gray mb-1">Saturday: 9:00 AM - 1:00 PM</p>
-                  <p className="text-nethra-gray">Sunday: Closed</p>
                   <p className="text-nethra-gray mt-2">24/7 Security Operations Center Available</p>
                 </div>
                 
                 <div>
                   <h3 className="text-lg font-semibold text-nethra-navy mb-2">Service Areas</h3>
                   <p className="text-nethra-gray">
-                    We provide security services across Hyderabad, Secunderabad, and surrounding areas. 
+                    We provide security services throughout Telangana & Andhra Pradesh. 
                     Contact us for services in other locations.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      
       {/* Map */}
       <section className="py-12 bg-nethra-light">
         <div className="container mx-auto px-4">

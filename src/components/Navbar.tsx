@@ -70,8 +70,8 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <div className="flex flex-col items-start">
-              <div className="text-3xl font-bold text-nethra-navy">nss</div>
-              <div className="text-xs uppercase tracking-wider text-nethra-navy font-medium -mt-1">
+              <div className={`text-3xl font-bold ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}>nss</div>
+              <div className={`text-xs uppercase tracking-wider font-medium -mt-1 ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}>
                 NETHRA SECURITY SERVICES
               </div>
             </div>
