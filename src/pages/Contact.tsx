@@ -73,7 +73,7 @@ const Contact = () => {
                 
                 <div className="mb-6">
                   <h3 className="text-lg font-semibold text-nethra-navy mb-2">Business Hours</h3>
-                  <p className="text-nethra-gray mb-1">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                  <p className="text-nethra-gray mb-1">9:00 AM - 6:00 PM</p>
                   <p className="text-nethra-gray mt-2">24/7 Security Operations Center Available</p>
                 </div>
                 

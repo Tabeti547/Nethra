@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
@@ -26,7 +27,7 @@ const Index = () => {
               with expert human oversight for unparalleled protection.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" asChild>
+              <Button size="lg" variant="secondary" className="bg-white text-nethra-navy hover:bg-white/90" asChild>
                 <Link to="/services">Explore Our Services</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-nethra-navy" asChild>
@@ -346,7 +347,7 @@ const Index = () => {
             your business, events, and assets.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" variant="secondary" asChild>
+            <Button size="lg" variant="secondary" className="bg-white text-nethra-navy hover:bg-white/90" asChild>
               <Link to="/contact">Contact Us</Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-nethra-navy" asChild>

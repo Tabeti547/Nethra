@@ -86,9 +86,9 @@ const Navbar = () => {
                     <>
                       <button 
                         onClick={() => toggleDropdown(item.title)}
-                        className={`flex items-center text-nethra-navy hover:text-nethra-accent transition-colors ${
+                        className={`flex items-center ${
                           isScrolled ? 'text-nethra-navy' : 'text-white'
-                        }`}
+                        } hover:text-nethra-accent transition-colors`}
                       >
                         {item.title}
                         <ChevronDown size={16} className="ml-1" />
@@ -132,15 +132,20 @@ const Navbar = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={`${isScrolled ? 'text-nethra-navy' : 'text-white'} hover:text-nethra-accent transition-colors`}>
                 <Linkedin size={18} />
               </a>
-              <Button size="sm" variant="outline" className={`ml-4 ${!isScrolled && 'border-white text-white hover:bg-white hover:text-nethra-navy'}`}>
-                Get a Quote
+              <Button 
+                size="sm" 
+                variant={isScrolled ? "outline" : "secondary"} 
+                className={`ml-4 ${!isScrolled && 'text-nethra-navy bg-white hover:bg-white/90'}`}
+                asChild
+              >
+                <Link to="/contact">Get a Quote</Link>
               </Button>
             </div>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-nethra-navy"
+            className={`lg:hidden ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -206,7 +211,9 @@ const Navbar = () => {
               </a>
             </div>
             <div className="mt-4">
-              <Button size="sm" className="w-full">Get a Quote</Button>
+              <Button size="sm" className="w-full" asChild>
+                <Link to="/contact">Get a Quote</Link>
+              </Button>
             </div>
           </div>
         </div>
