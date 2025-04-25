@@ -36,19 +36,8 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Technology Showcase Section */}
-      <section className="py-16 bg-nethra-light">
-        <div className="container mx-auto px-4">
-          <div className="rounded-lg overflow-hidden shadow-xl">
-            <img 
-              src="/lovable-uploads/67bf9b33-8e2d-4971-b465-3f3f176ee571.png"
-              alt="Nethra Security Monitoring Center"
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        </div>
-      </section>
+      
+      {/* Technology Showcase Section - REMOVED */}
       
       {/* About Section */}
       <section className="section-padding bg-white">
