@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -86,6 +87,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      
       {/* Map */}
       <section className="py-12 bg-nethra-light">
         <div className="container mx-auto px-4">
