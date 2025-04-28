@@ -10,10 +10,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in">
-            Nethra Security Services for a Safer Tomorrow
+            Nethra Security Services for a Safer Tomorrow, Powered by Technology
           </h1>
           <p className="text-xl text-white/90 mb-8 animate-fade-in delay-100">
-            Where human expertise meets technology for unparalleled protection.
+            Nethra Security Services pioneers the future of security by integrating advanced AI technology 
+            with expert human oversight for unparalleled protection.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in delay-200">
             <Button size="lg" variant="secondary" className="bg-white text-nethra-navy hover:bg-white/90" asChild>
