@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
@@ -23,7 +22,7 @@ const Index = () => {
               Nethra Security Services for a Safer Tomorrow, Powered by Technology
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Nethra Security Services pioneers the future of security by integrating advanced AI technology 
+              NSS pioneers the future of security by integrating advanced technology 
               with expert human oversight for unparalleled protection.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -38,13 +37,11 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Technology Showcase Section - REMOVED */}
-      
       {/* About Section */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-nethra-navy mb-4">About Nethra Security</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-nethra-navy mb-4">About NSS</h2>
             <div className="w-24 h-1 bg-nethra-accent mx-auto"></div>
           </div>
           
@@ -52,21 +49,17 @@ const Index = () => {
             <div>
               <h3 className="text-2xl font-bold text-nethra-navy mb-4">Pioneering the Future of Security</h3>
               <p className="text-nethra-gray mb-6">
-                Nethra Security Services pioneers the future of security by integrating advanced AI and technology 
-                with expert human oversight. Responding to today's complex threat landscape, we deliver intelligent 
-                solutions that move beyond traditional methods.
+                NSS pioneers the future of security by integrating advanced technology 
+                with expert human oversight. Responding to today's complex threat landscape, 
+                we deliver intelligent solutions that move beyond traditional methods.
               </p>
               <p className="text-nethra-gray mb-6">
-                We offer proactive, data-driven physical and digital security, utilizing machine learning for 
-                predictive insights and automation for enhanced efficiency. Our blend of seasoned security 
-                professionals and tech innovators ensures smarter, faster, and more resilient protection.
-              </p>
-              <p className="text-nethra-gray mb-6">
-                We provide the next generation of security, safeguarding your assets, people, and operations 
-                in a rapidly evolving world, delivering peace of mind through intelligent vigilance.
+                We offer proactive, data-driven physical security, utilizing technology for 
+                enhanced efficiency. Our blend of seasoned security professionals and technology 
+                experts ensures smarter, faster, and more resilient protection.
               </p>
               <Button className="mt-2" asChild>
-                <Link to="/about">Learn More About Us <ArrowRight size={16} className="ml-2" /></Link>
+                <Link to="/about">Learn More About Us</Link>
               </Button>
             </div>
             <div className="bg-nethra-navy/5 p-8 rounded-lg">
@@ -74,7 +67,7 @@ const Index = () => {
                 <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
                   <h4 className="font-bold text-xl mb-2 text-nethra-navy">Our Mission</h4>
                   <p className="text-nethra-gray">
-                    To empower clients with superior security by seamlessly integrating human expertise with advanced AI and technology.
+                    To empower clients with superior security by seamlessly integrating human expertise with advanced technology.
                   </p>
                   <Link to="/about#mission" className="inline-flex items-center text-nethra-accent mt-3 hover:underline">
                     Read More <ChevronRight size={16} className="ml-1" />
@@ -83,7 +76,7 @@ const Index = () => {
                 <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
                   <h4 className="font-bold text-xl mb-2 text-nethra-navy">Our Vision</h4>
                   <p className="text-nethra-gray">
-                    To be the global benchmark for intelligent security, pioneering the fusion of AI and human insight.
+                    To be the global benchmark for intelligent security, pioneering the fusion of technology and human insight.
                   </p>
                   <Link to="/about#vision" className="inline-flex items-center text-nethra-accent mt-3 hover:underline">
                     Read More <ChevronRight size={16} className="ml-1" />
@@ -102,7 +95,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-nethra-navy mb-4">Our Services</h2>
             <div className="w-24 h-1 bg-nethra-accent mx-auto mb-6"></div>
             <p className="max-w-3xl mx-auto text-lg text-nethra-gray">
-              We offer a comprehensive range of security services enhanced with AI technology to 
+              We offer a comprehensive range of security services enhanced with technology to 
               provide superior protection for your business, events, and assets.
             </p>
           </div>
@@ -116,7 +109,7 @@ const Index = () => {
                 <h3 className="text-xl font-bold mb-3 text-nethra-navy">Manpower Guarding</h3>
                 <p className="text-nethra-gray mb-4">
                   Professional security personnel trained in the latest security protocols and 
-                  equipped with AI-assisted monitoring tools for enhanced vigilance.
+                  equipped with technology-assisted monitoring tools for enhanced vigilance.
                 </p>
                 <Link to="/services#manpower" className="inline-flex items-center text-nethra-accent hover:underline">
                   Learn More <ChevronRight size={16} className="ml-1" />
@@ -228,9 +221,9 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white/5 rounded-lg p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
               <CheckCircle size={32} className="text-nethra-accent mb-4" />
-              <h3 className="text-xl font-bold mb-3">AI-Enhanced Security</h3>
+              <h3 className="text-xl font-bold mb-3">Tech-Enhanced Security</h3>
               <p className="text-white/80">
-                Our security solutions integrate cutting-edge AI technology for predictive threat 
+                Our security solutions integrate advanced technology for predictive threat 
                 detection and automated response systems.
               </p>
             </div>
@@ -343,7 +336,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Enhance Your Security?</h2>
           <p className="max-w-2xl mx-auto text-lg text-white/90 mb-8">
-            Contact us today to discuss how our AI-powered security solutions can protect 
+            Contact us today to discuss how our technology-powered security solutions can protect 
             your business, events, and assets.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">

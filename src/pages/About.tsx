@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -16,7 +15,7 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
           <p className="max-w-3xl mx-auto text-lg text-white/80">
-            Nethra Security Services pioneers the future of security by integrating advanced AI and technology 
+            Nethra Security Services pioneers the future of security by integrating advanced technology 
             with expert human oversight to deliver superior protection.
           </p>
         </div>
@@ -29,21 +28,20 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-nethra-navy mb-6">Our Story</h2>
               <p className="text-nethra-gray mb-4">
-                Founded with a vision to revolutionize the security industry, Nethra Security Services has established 
-                itself as a pioneer in integrating advanced AI technology with traditional security practices.
+                NSS was founded with a vision to revolutionize the security industry. We are building 
+                a company that understands and addresses the evolving security challenges of today's world.
               </p>
               <p className="text-nethra-gray mb-4">
-                In response to the increasingly complex security challenges of the modern world, we have developed 
-                a comprehensive approach that combines the irreplaceable human element of security with cutting-edge 
-                artificial intelligence and machine learning.
+                Our approach combines the essential human element of security with modern technology, 
+                creating comprehensive solutions that protect what matters most.
               </p>
               <p className="text-nethra-gray mb-4">
-                Our team consists of seasoned security professionals, technology innovators, and industry experts 
-                who work collaboratively to provide unparalleled protection for businesses, events, and individuals.
+                Our team consists of seasoned security professionals and industry experts who work 
+                collaboratively to provide unparalleled protection for businesses, events, and individuals.
               </p>
               <p className="text-nethra-gray">
-                As we continue to evolve and grow, our commitment to excellence, innovation, and client satisfaction 
-                remains at the core of everything we do, driving us to constantly enhance our capabilities and services.
+                As we continue to grow, our commitment to excellence, innovation, and client satisfaction 
+                remains at the core of everything we do.
               </p>
             </div>
             <div className="bg-nethra-light p-8 rounded-lg">
@@ -52,9 +50,9 @@ const About = () => {
                 <div className="flex items-start">
                   <CheckCircle size={24} className="text-nethra-navy mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="text-lg font-semibold text-nethra-navy mb-1">AI-Driven Intelligence</h4>
+                    <h4 className="text-lg font-semibold text-nethra-navy mb-1">Tech-Driven Intelligence</h4>
                     <p className="text-nethra-gray">
-                      We leverage advanced AI algorithms to analyze security data, identify patterns, 
+                      We leverage advanced technology to analyze security data, identify patterns, 
                       and predict potential threats before they materialize.
                     </p>
                   </div>
@@ -75,7 +73,7 @@ const About = () => {
                     <h4 className="text-lg font-semibold text-nethra-navy mb-1">Integrated Solutions</h4>
                     <p className="text-nethra-gray">
                       We develop comprehensive security systems that seamlessly integrate physical 
-                      security measures with digital monitoring and analytics.
+                      security measures with advanced monitoring and analytics.
                     </p>
                   </div>
                 </div>
@@ -102,10 +100,7 @@ const About = () => {
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h2 className="text-3xl font-bold text-nethra-navy mb-6">Our Mission</h2>
               <p className="text-nethra-gray mb-4">
-                To empower clients with superior security by seamlessly integrating human expertise with advanced AI 
-                and technology. We deliver proactive, intelligent, and resilient protection, effectively neutralizing 
-                the evolving spectrum of physical and digital threats to ensure operational continuity and safety in 
-                the modern era.
+                To empower clients with superior security by seamlessly integrating human expertise with advanced technology. We deliver proactive, intelligent, and resilient protection, effectively neutralizing the evolving spectrum of physical threats to ensure operational continuity and safety in the modern era.
               </p>
               <p className="text-nethra-gray">
                 Through our commitment to innovation, excellence, and client-focused solutions, we aim to:
@@ -133,7 +128,7 @@ const About = () => {
             <div id="vision" className="bg-white p-8 rounded-lg shadow-md">
               <h2 className="text-3xl font-bold text-nethra-navy mb-6">Our Vision</h2>
               <p className="text-nethra-gray mb-4">
-                To be the global benchmark for intelligent security, pioneering the fusion of AI and human insight. 
+                To be the global benchmark for intelligent security, pioneering the fusion of technology and human insight. 
                 We aim to create inherently safer, smarter, and more secure environments for businesses and communities 
                 worldwide, defining the future standard of protection through continuous technological innovation.
               </p>
@@ -143,7 +138,7 @@ const About = () => {
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start">
                   <CheckCircle size={18} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-nethra-gray">Leading the transformation of the security industry through AI integration</span>
+                  <span className="text-nethra-gray">Leading the transformation of the security industry through technology integration</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle size={18} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
@@ -240,7 +235,7 @@ const About = () => {
                 <h3 className="text-xl font-bold text-nethra-navy mb-1">Technology Lead</h3>
                 <p className="text-nethra-gray text-sm mb-4">Chief Technology Officer</p>
                 <p className="text-nethra-gray">
-                  Oversees our AI integration and technological innovations with expertise in security systems and machine learning.
+                  Oversees our technology integration and technological innovations with expertise in security systems.
                 </p>
               </div>
             </div>
@@ -262,9 +257,9 @@ const About = () => {
       {/* CTA Section */}
       <section className="py-20 bg-nethra-navy text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Experience Next-Gen Security?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Experience Tech-Driven Security?</h2>
           <p className="max-w-2xl mx-auto text-lg mb-8">
-            Contact us today to learn more about our AI-powered security solutions and how we can help protect your business, events, and assets.
+            Contact us today to learn more about our technology-powered security solutions and how we can help protect your business, events, and assets.
           </p>
           <Button size="lg" variant="secondary" asChild>
             <Link to="/contact">Contact Us</Link>

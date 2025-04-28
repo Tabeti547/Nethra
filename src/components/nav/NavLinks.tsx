@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 
@@ -37,7 +36,7 @@ export const NavLinks = ({
                 onClick={() => toggleDropdown(item.title)}
                 className={`flex items-center ${
                   isScrolled ? 'text-nethra-navy' : 'text-white'
-                } hover:text-nethra-accent transition-colors`}
+                } hover:text-nethra-accent transition-colors visible`}
               >
                 {item.title}
                 <ChevronDown size={16} className="ml-1" />
@@ -48,7 +47,7 @@ export const NavLinks = ({
                     <Link
                       key={dropItem.title}
                       to={dropItem.link}
-                      className="block px-4 py-2 text-sm text-nethra-navy hover:bg-nethra-light"
+                      className="block px-4 py-2 text-sm text-nethra-navy hover:bg-nethra-light visible"
                       onClick={() => {
                         toggleDropdown(item.title);
                         onNavClick?.();
@@ -65,7 +64,7 @@ export const NavLinks = ({
               to={item.link} 
               className={`transition-colors ${
                 isScrolled ? 'text-nethra-navy' : 'text-white'
-              } hover:text-nethra-accent`}
+              } hover:text-nethra-accent visible`}
               onClick={onNavClick}
             >
               {item.title}
