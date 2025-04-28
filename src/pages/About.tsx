@@ -26,22 +26,19 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-nethra-navy mb-6">Our Story</h2>
+              <h2 className="text-3xl font-bold text-nethra-navy mb-6">Our Journey</h2>
               <p className="text-nethra-gray mb-4">
-                NSS was founded with a vision to revolutionize the security industry. We are building 
-                a company that understands and addresses the evolving security challenges of today's world.
+                NSS emerges as a dynamic force in the security industry, bringing fresh perspectives 
+                and innovative solutions to modern security challenges. We're building tomorrow's 
+                security standards today.
               </p>
               <p className="text-nethra-gray mb-4">
-                Our approach combines the essential human element of security with modern technology, 
-                creating comprehensive solutions that protect what matters most.
-              </p>
-              <p className="text-nethra-gray mb-4">
-                Our team consists of seasoned security professionals and industry experts who work 
-                collaboratively to provide unparalleled protection for businesses, events, and individuals.
+                Our team brings together seasoned security professionals and technology experts 
+                who share a vision of transforming how security services are delivered.
               </p>
               <p className="text-nethra-gray">
-                As we continue to grow, our commitment to excellence, innovation, and client satisfaction 
-                remains at the core of everything we do.
+                With every project, we strengthen our commitment to excellence, innovation, 
+                and client satisfaction, setting new benchmarks in the security industry.
               </p>
             </div>
             <div className="bg-nethra-light p-8 rounded-lg">
