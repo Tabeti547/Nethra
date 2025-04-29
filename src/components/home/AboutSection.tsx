@@ -10,7 +10,7 @@ const AboutSection = () => {
     <section className="section-padding bg-white py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-nethra-navy mb-4">About Nethra Security</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-nethra-navy mb-4">About NSS</h2>
           <div className="w-24 h-1 bg-nethra-accent mx-auto mb-8"></div>
         </div>
         
@@ -19,7 +19,7 @@ const AboutSection = () => {
             <div>
               <h3 className="text-2xl font-bold text-nethra-navy mb-4">Pioneering the Future of Security</h3>
               <p className="text-nethra-gray mb-4">
-                Nethra Security Services pioneers the future of security by integrating advanced technology 
+                NSS pioneers the future of security by integrating advanced technology 
                 with expert human oversight. Responding to today's complex threat 
                 landscape, we deliver intelligent solutions that move beyond traditional methods.
               </p>

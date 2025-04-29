@@ -52,6 +52,33 @@ const Certifications = () => {
           <h2 className="text-3xl font-bold text-nethra-navy mb-12 text-center">Our Key Certifications</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* PSARA Compliance - Now first */}
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
+              <div className="w-16 h-16 bg-nethra-navy/10 rounded-full flex items-center justify-center mb-6">
+                <ShieldCheck size={32} className="text-nethra-navy" />
+              </div>
+              <h3 className="text-xl font-bold text-nethra-navy mb-4">PSARA Compliance</h3>
+              <p className="text-nethra-gray mb-4">
+                Full compliance with the Private Security Agencies Regulation Act, confirming our adherence 
+                to all legal requirements for operating a security services agency in India.
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
+                  <span className="text-nethra-gray">Valid PSARA license</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
+                  <span className="text-nethra-gray">Adherence to prescribed training standards</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
+                  <span className="text-nethra-gray">Compliance with all regulatory requirements</span>
+                </li>
+              </ul>
+            </div>
+            
+            {/* ISO Certifications */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
               <div className="w-16 h-16 bg-nethra-navy/10 rounded-full flex items-center justify-center mb-6">
                 <Award size={32} className="text-nethra-navy" />
@@ -152,55 +179,7 @@ const Certifications = () => {
               </ul>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
-              <div className="w-16 h-16 bg-nethra-navy/10 rounded-full flex items-center justify-center mb-6">
-                <ShieldCheck size={32} className="text-nethra-navy" />
-              </div>
-              <h3 className="text-xl font-bold text-nethra-navy mb-4">PSARA Compliance</h3>
-              <p className="text-nethra-gray mb-4">
-                Full compliance with the Private Security Agencies Regulation Act, confirming our adherence 
-                to all legal requirements for operating a security services agency in India.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-start">
-                  <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-nethra-gray">Valid PSARA license</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-nethra-gray">Adherence to prescribed training standards</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-nethra-gray">Compliance with all regulatory requirements</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
-              <div className="w-16 h-16 bg-nethra-navy/10 rounded-full flex items-center justify-center mb-6">
-                <ShieldCheck size={32} className="text-nethra-navy" />
-              </div>
-              <h3 className="text-xl font-bold text-nethra-navy mb-4">AI Security Certification</h3>
-              <p className="text-nethra-gray mb-4">
-                Specialized certification in AI-enhanced security systems, validating our expertise in 
-                implementing and managing advanced technological security solutions.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-start">
-                  <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-nethra-gray">Advanced AI security system implementation</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-nethra-gray">AI-Human integration protocols</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-nethra-gray">Ethical AI deployment standards</span>
-                </li>
-              </ul>
-            </div>
+            {/* AI Security Certification removed as requested */}
           </div>
         </div>
       </section>

@@ -28,7 +28,7 @@ const Compliance = () => {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-nethra-navy mb-6 text-center">Our Commitment to Compliance</h2>
             <p className="text-lg text-nethra-gray mb-4">
-              At Nethra Security Services, we believe that maintaining the highest standards of compliance is 
+              At NSS, we believe that maintaining the highest standards of compliance is 
               not just a legal obligation but a cornerstone of our business ethics. We are committed to ensuring 
               that all our operations adhere to relevant laws, regulations, and industry best practices.
             </p>

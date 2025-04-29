@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -15,7 +16,7 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
           <p className="max-w-3xl mx-auto text-lg text-white/80">
-            Nethra Security Services pioneers the future of security by integrating advanced technology 
+            NSS pioneers the future of security by integrating advanced technology 
             with expert human oversight to deliver superior protection.
           </p>
         </div>
@@ -203,49 +204,6 @@ const About = () => {
                 We embrace technological advancements and creative thinking, continuously exploring new approaches 
                 to security challenges and pioneering solutions that set new industry standards.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Team */}
-      <section className="py-16 bg-nethra-light">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-nethra-navy mb-8 text-center">Our Leadership Team</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Placeholder for team members - will be updated later with actual team info */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="h-64 bg-nethra-gray/20"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-nethra-navy mb-1">Security Director</h3>
-                <p className="text-nethra-gray text-sm mb-4">Chief Security Officer</p>
-                <p className="text-nethra-gray">
-                  Leads our security operations with over 20 years of experience in law enforcement and corporate security.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="h-64 bg-nethra-gray/20"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-nethra-navy mb-1">Technology Lead</h3>
-                <p className="text-nethra-gray text-sm mb-4">Chief Technology Officer</p>
-                <p className="text-nethra-gray">
-                  Oversees our technology integration and technological innovations with expertise in security systems.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="h-64 bg-nethra-gray/20"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-nethra-navy mb-1">Operations Manager</h3>
-                <p className="text-nethra-gray text-sm mb-4">Head of Operations</p>
-                <p className="text-nethra-gray">
-                  Manages our day-to-day security operations and personnel deployment with a focus on efficiency and client satisfaction.
-                </p>
-              </div>
             </div>
           </div>
         </div>

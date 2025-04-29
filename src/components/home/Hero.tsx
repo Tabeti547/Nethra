@@ -13,7 +13,7 @@ const Hero = () => {
             Nethra Security Services for a Safer Tomorrow, Powered by Technology
           </h1>
           <p className="text-xl text-white/90 mb-8 animate-fade-in delay-100">
-            Nethra Security Services pioneers the future of security by integrating advanced AI technology 
+            Nethra Security Services pioneers the future of security by integrating advanced technology 
             with expert human oversight for unparalleled protection.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in delay-200">
