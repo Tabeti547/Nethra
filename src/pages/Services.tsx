@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
@@ -18,7 +17,7 @@ const Services = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
           <p className="max-w-3xl mx-auto text-lg text-white/80">
-            We offer comprehensive security solutions that blend advanced AI technology with expert human oversight 
+            We offer comprehensive security solutions that blend advanced technology with expert human oversight 
             to provide unparalleled protection for your business, events, and assets.
           </p>
         </div>
@@ -30,8 +29,8 @@ const Services = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold text-nethra-navy mb-6">Comprehensive Security Solutions</h2>
             <p className="text-lg text-nethra-gray">
-              At Nethra Security Services, we deliver intelligent security solutions that move beyond traditional methods. 
-              Our AI-integrated approach ensures proactive threat detection, efficient resource allocation, and seamless 
+              At NSS, we deliver intelligent security solutions that move beyond traditional methods. 
+              Our technology-integrated approach ensures proactive threat detection, efficient resource allocation, and seamless 
               security operations across all our service offerings.
             </p>
           </div>
@@ -43,9 +42,9 @@ const Services = () => {
                 <li className="flex items-start">
                   <CheckCircle size={24} className="text-nethra-navy mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="text-lg font-semibold text-nethra-navy mb-1">AI-Enhanced Monitoring</h4>
+                    <h4 className="text-lg font-semibold text-nethra-navy mb-1">Tech-Driven Monitoring</h4>
                     <p className="text-nethra-gray">
-                      Our security systems use advanced AI to analyze video feeds, detect anomalies, and alert 
+                      Our security systems use advanced technology to analyze video feeds, detect anomalies, and alert 
                       security personnel to potential threats in real-time.
                     </p>
                   </div>
@@ -90,7 +89,7 @@ const Services = () => {
                 technology to create a comprehensive security ecosystem.
               </p>
               <p className="text-nethra-gray mb-4">
-                By utilizing AI and machine learning algorithms, we enhance traditional security measures 
+                By utilizing advanced algorithms, we enhance traditional security measures 
                 with predictive capabilities, automated monitoring, and rapid response protocols. This fusion 
                 of technology and expertise allows us to deliver security services that are more efficient, 
                 effective, and adaptable than conventional approaches.
@@ -119,7 +118,7 @@ const Services = () => {
             </div>
             <p className="text-nethra-gray mb-4">
               Our Manpower Guarding service provides highly trained security personnel who serve as the frontline 
-              defense for your premises. Unlike traditional security guards, our team is equipped with AI-assisted 
+              defense for your premises. Unlike traditional security guards, our team is equipped with technology-assisted 
               tools that enhance their capabilities and effectiveness.
             </p>
             <p className="text-nethra-gray mb-4">
@@ -133,7 +132,7 @@ const Services = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-nethra-gray">AI-assisted monitoring tools for enhanced vigilance</span>
+                    <span className="text-nethra-gray">Technology-assisted monitoring tools for enhanced vigilance</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
@@ -178,7 +177,7 @@ const Services = () => {
             <p className="text-nethra-gray mb-4">
               Our Business Security solutions are designed to protect your company's assets, employees, and 
               operations from a wide range of threats. We integrate advanced surveillance systems, access control, 
-              and AI-powered monitoring with expert security personnel to create a robust security framework.
+              and technology-powered monitoring with expert security personnel to create a robust security framework.
             </p>
             <p className="text-nethra-gray mb-4">
               We begin with a thorough security assessment of your premises, identifying vulnerabilities and 
@@ -195,7 +194,7 @@ const Services = () => {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-nethra-gray">AI-powered threat detection and alert systems</span>
+                    <span className="text-nethra-gray">Technology-powered threat detection and alert systems</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle size={16} className="text-nethra-navy mr-2 mt-1 flex-shrink-0" />
@@ -464,7 +463,7 @@ const Services = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Need a Custom Security Solution?</h2>
           <p className="max-w-2xl mx-auto text-lg mb-8">
-            Contact us today to discuss how our AI-powered security services can be tailored to your specific needs.
+            Contact us today to discuss how our technology-powered security services can be tailored to your specific needs.
           </p>
           <Button size="lg" variant="secondary" asChild>
             <Link to="/contact">Request a Consultation</Link>
