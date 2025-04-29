@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-4">
-              Pioneering the future of security by integrating advanced AI and technology with expert human oversight.
+              Pioneering the future of security by integrating advanced technology with expert human oversight.
             </p>
             <div className="flex space-x-4 mb-6">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-nethra-accent transition-colors">
@@ -49,9 +49,6 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/certifications" className="text-gray-300 hover:text-white transition-colors">Certifications</Link>
-              </li>
-              <li>
-                <Link to="/csr" className="text-gray-300 hover:text-white transition-colors">CSR Policies</Link>
               </li>
               <li>
                 <Link to="/media" className="text-gray-300 hover:text-white transition-colors">Media</Link>

@@ -10,7 +10,6 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Compliance from "./pages/Compliance";
 import Certifications from "./pages/Certifications";
-import CSR from "./pages/CSR";
 import Media from "./pages/Media";
 import NotFound from "./pages/NotFound";
 
@@ -28,7 +27,6 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/certifications" element={<Certifications />} />
-          <Route path="/csr" element={<CSR />} />
           <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

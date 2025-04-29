@@ -19,12 +19,12 @@ const AboutSection = () => {
             <div>
               <h3 className="text-2xl font-bold text-nethra-navy mb-4">Pioneering the Future of Security</h3>
               <p className="text-nethra-gray mb-4">
-                Nethra Security Services pioneers the future of security by integrating advanced AI 
-                and technology with expert human oversight. Responding to today's complex threat 
+                Nethra Security Services pioneers the future of security by integrating advanced technology 
+                with expert human oversight. Responding to today's complex threat 
                 landscape, we deliver intelligent solutions that move beyond traditional methods.
               </p>
               <p className="text-nethra-gray mb-4">
-                We offer proactive, data-driven physical and digital security, utilizing machine learning 
+                We offer proactive, data-driven physical and digital security, utilizing cutting-edge technology 
                 for predictive insights and automation for enhanced efficiency. Our blend of seasoned 
                 security professionals and tech innovators ensures smarter, faster, and more resilient 
                 protection.
@@ -48,7 +48,7 @@ const AboutSection = () => {
               <CardContent className="p-0">
                 <p className="text-nethra-gray mb-4">
                   To empower clients with superior security by seamlessly integrating human 
-                  expertise with advanced AI and technology.
+                  expertise with advanced technology.
                 </p>
                 <Link to="/about" className="text-nethra-accent hover:text-nethra-accent/90">
                   Read More &gt;
@@ -63,7 +63,7 @@ const AboutSection = () => {
               <CardContent className="p-0">
                 <p className="text-nethra-gray mb-4">
                   To be the global benchmark for intelligent security, pioneering 
-                  the fusion of AI and human insight.
+                  the fusion of technology and human insight.
                 </p>
                 <Link to="/about" className="text-nethra-accent hover:text-nethra-accent/90">
                   Read More &gt;
@@ -74,7 +74,7 @@ const AboutSection = () => {
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
               <Settings className="w-12 h-12 text-nethra-accent mb-4" />
               <h4 className="font-bold text-xl mb-2 text-nethra-navy">Technology</h4>
-              <p className="text-nethra-gray">Advanced AI-driven security solutions</p>
+              <p className="text-nethra-gray">Advanced technology-driven security solutions</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">

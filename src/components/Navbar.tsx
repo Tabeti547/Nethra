@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -46,7 +47,6 @@ const Navbar = () => {
       dropdown: true,
       dropdownItems: [
         { title: 'Certifications', link: '/certifications' },
-        { title: 'CSR Policies', link: '/csr' },
         { title: 'Media', link: '/media' }
       ]
     },
