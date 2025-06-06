@@ -34,8 +34,8 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
         <div className="max-w-5xl">
-          {/* Premium badges */}
-          <div className={`flex flex-wrap gap-4 mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          {/* Premium badges - moved to top with proper spacing */}
+          <div className={`flex flex-wrap gap-3 mb-12 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex items-center gap-2 px-4 py-2 glass-effect rounded-full border border-white/20">
               <Shield className="w-4 h-4 text-nethra-accent" />
               <span className="text-white text-sm font-medium">Premium Security</span>
@@ -50,18 +50,20 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Main heading with professional typography */}
-          <h1 className={`font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-            <span className="block mb-3">NSS Security Services</span>
-            <span className="block bg-gradient-to-r from-white via-nethra-accent to-white bg-clip-text text-transparent">
-              for a Safer Tomorrow
-            </span>
-            <span className="block text-2xl md:text-3xl lg:text-4xl mt-6 text-white/90 font-medium">
+          {/* Main heading with professional typography and proper spacing */}
+          <div className={`mb-8 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+              <span className="block mb-2">NSS Security Services</span>
+              <span className="block bg-gradient-to-r from-white via-nethra-accent to-white bg-clip-text text-transparent">
+                for a Safer Tomorrow
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl lg:text-3xl mt-6 text-white/90 font-medium">
               Powered by Technology
-            </span>
-          </h1>
+            </p>
+          </div>
 
-          {/* Enhanced description */}
+          {/* Enhanced description with proper spacing */}
           <p className={`text-lg md:text-xl text-white/90 mb-10 max-w-3xl leading-relaxed transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             NSS Security Services pioneers the future of security by integrating advanced technology 
             with expert human oversight for <span className="text-nethra-accent font-semibold">unparalleled protection</span>.
@@ -93,7 +95,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Trust indicators */}
+          {/* Trust indicators with proper spacing */}
           <div className={`flex flex-wrap items-center gap-8 text-white/70 transition-all duration-1000 delay-1100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
