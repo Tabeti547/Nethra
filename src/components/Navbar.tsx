@@ -65,16 +65,6 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <div className="flex flex-col items-start">
-              <div className={`text-3xl font-bold ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}>nss</div>
-              <div className={`text-xs uppercase tracking-wider font-medium -mt-1 ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}>
-                NETHRA SECURITY SERVICES
-              </div>
-            </div>
-          </Link>
-
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center">
             <NavLinks 
