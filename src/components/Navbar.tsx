@@ -1,12 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,8 +27,16 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Empty left side to maintain spacing */}
-          <div></div>
+          {/* Left side - Logo (only on non-home pages) */}
+          <div className="flex items-center">
+            {!isHomePage && (
+              <Link to="/" className="flex items-center">
+                <span className={`text-2xl font-bold ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}>
+                  NSS
+                </span>
+              </Link>
+            )}
+          </div>
 
           {/* Right side - Quote button */}
           <div className="flex items-center">
