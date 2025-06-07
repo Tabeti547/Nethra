@@ -3,14 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
-import { NavLinks } from './nav/NavLinks';
-import { SocialIcons } from './nav/SocialIcons';
-import { MobileMenu } from './nav/MobileMenu';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,42 +17,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleDropdown = (menu: string) => {
-    setActiveDropdown(activeDropdown === menu ? null : menu);
-  };
-
-  const navLinks = [
-    { 
-      title: 'About', 
-      link: '/about',
-      dropdown: false
-    },
-    { 
-      title: 'Services', 
-      link: '/services',
-      dropdown: false
-    },
-    { 
-      title: 'Compliance', 
-      link: '/compliance',
-      dropdown: false
-    },
-    { 
-      title: 'Resources', 
-      link: '#',
-      dropdown: true,
-      dropdownItems: [
-        { title: 'Certifications', link: '/certifications' },
-        { title: 'Media', link: '/media' }
-      ]
-    },
-    { 
-      title: 'Contact', 
-      link: '/contact',
-      dropdown: false
-    },
-  ];
-
   return (
     <nav 
       className={`fixed w-full z-50 transition-all ${
@@ -65,46 +25,30 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center">
-            <NavLinks 
-              navLinks={navLinks}
-              isScrolled={isScrolled}
-              activeDropdown={activeDropdown}
-              toggleDropdown={toggleDropdown}
-            />
-            
-            <div className="ml-8 flex items-center">
-              <SocialIcons isScrolled={isScrolled} />
-              <Button 
-                size="sm" 
-                variant={isScrolled ? "outline" : "secondary"} 
-                className={`ml-4 ${!isScrolled && 'text-nethra-navy bg-white hover:bg-white/90'}`}
-                asChild
-              >
-                <Link to="/contact">Get a Quote</Link>
-              </Button>
-            </div>
+          {/* Empty left side to maintain spacing */}
+          <div></div>
+
+          {/* Right side - Quote button */}
+          <div className="flex items-center">
+            <Button 
+              size="sm" 
+              variant={isScrolled ? "outline" : "secondary"} 
+              className={`${!isScrolled && 'text-nethra-navy bg-white hover:bg-white/90'}`}
+              asChild
+            >
+              <Link to="/contact">Get a Quote</Link>
+            </Button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button - kept for potential future use */}
           <button
-            className={`lg:hidden ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}
+            className={`lg:hidden hidden ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      <MobileMenu 
-        isOpen={isMenuOpen}
-        navLinks={navLinks}
-        activeDropdown={activeDropdown}
-        toggleDropdown={toggleDropdown}
-        onClose={() => setIsMenuOpen(false)}
-      />
     </nav>
   );
 };
