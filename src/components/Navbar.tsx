@@ -1,8 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +24,15 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const navigationItems = [
+    { title: 'About', path: '/about' },
+    { title: 'Services', path: '/services' },
+    { title: 'Compliance', path: '/compliance' },
+    { title: 'Certifications', path: '/certifications' },
+    { title: 'Media', path: '/media' },
+    { title: 'Contact', path: '/contact' },
+  ];
 
   return (
     <nav 
@@ -38,8 +53,42 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* Right side - Quote button */}
-          <div className="flex items-center">
+          {/* Right side - Navigation dropdown and Quote button */}
+          <div className="flex items-center space-x-4">
+            {isHomePage && (
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button 
+                    variant="ghost" 
+                    size="sm"
+                    className={`${
+                      isScrolled 
+                        ? 'text-nethra-navy hover:text-nethra-accent' 
+                        : 'text-white hover:text-nethra-accent'
+                    } flex items-center space-x-1`}
+                  >
+                    <span>Menu</span>
+                    <ChevronDown size={16} />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent 
+                  align="end" 
+                  className="w-48 bg-white shadow-lg border border-gray-200"
+                >
+                  {navigationItems.map((item) => (
+                    <DropdownMenuItem key={item.title} asChild>
+                      <Link 
+                        to={item.path}
+                        className="w-full px-4 py-2 text-nethra-navy hover:bg-nethra-light hover:text-nethra-accent transition-colors cursor-pointer"
+                      >
+                        {item.title}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            )}
+            
             <Button 
               size="sm" 
               variant={isScrolled ? "outline" : "secondary"} 
