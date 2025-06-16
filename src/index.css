@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -38,32 +38,47 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
+
     --sidebar-foreground: 240 5.3% 26.1%;
+
     --sidebar-primary: 240 5.9% 10%;
+
     --sidebar-primary-foreground: 0 0% 98%;
+
     --sidebar-accent: 240 4.8% 95.9%;
+
     --sidebar-accent-foreground: 240 5.9% 10%;
+
     --sidebar-border: 220 13% 91%;
+
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
+
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
+
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
+
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
+
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
+
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
+
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
+
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -84,162 +99,25 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-    font-weight: 400;
-    line-height: 1.6;
-    letter-spacing: -0.005em;
+    @apply bg-background text-foreground font-sans;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-  }
-  
-  h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
-    font-weight: 700;
-  }
-  
-  h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl;
-    font-weight: 600;
-  }
-  
-  h3 {
-    @apply text-2xl md:text-3xl;
-    font-weight: 600;
-  }
-
-  p {
-    line-height: 1.7;
-    letter-spacing: -0.003em;
+    @apply font-heading font-semibold;
   }
 }
 
-/* Premium animations and interactions */
-@layer utilities {
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
-  }
-  
-  .animate-slide-up {
-    animation: slideUp 1s ease-out forwards;
-  }
-  
-  .animate-scale-in {
-    animation: scaleIn 0.6s ease-out forwards;
-  }
-  
-  .glass-effect {
-    backdrop-filter: blur(20px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  .premium-shadow {
-    box-shadow: 0 20px 40px -12px rgba(0, 46, 83, 0.08), 0 8px 16px -8px rgba(0, 46, 83, 0.06);
-  }
-  
-  .premium-shadow-lg {
-    box-shadow: 0 32px 64px -12px rgba(0, 46, 83, 0.15), 0 16px 32px -8px rgba(0, 46, 83, 0.1);
-  }
-  
-  .gradient-text {
-    background: linear-gradient(135deg, #002E53 0%, #0A416B 30%, #38BDF8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  
-  .hover-lift {
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .hover-lift:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 32px 64px -12px rgba(0, 46, 83, 0.25);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* Professional spacing utilities */
+/* Custom styling */
 .section-padding {
-  @apply py-24 md:py-32 lg:py-40;
-}
-
-.container-padding {
-  @apply px-6 md:px-8 lg:px-12;
+  @apply py-16 md:py-24;
 }
 
 .transition-all {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
 }
 
-/* Premium button styles */
-.btn-premium {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, #002E53 0%, #0A416B 50%, #38BDF8 100%);
-  border: none;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.025em;
-  transition: all 0.4s ease;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.btn-premium::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.6s;
-}
-
-.btn-premium:hover::before {
-  left: 100%;
-}
-
-.btn-premium:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 25px 50px -12px rgba(0, 46, 83, 0.4);
+.hero-section {
+  background-image: linear-gradient(rgba(0, 46, 83, 0.85), rgba(0, 46, 83, 0.9)), url('/public/placeholder.svg');
+  background-size: cover;
+  background-position: center;
 }

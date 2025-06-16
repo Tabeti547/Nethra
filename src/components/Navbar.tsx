@@ -1,20 +1,16 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { NavLinks } from './nav/NavLinks';
+import { SocialIcons } from './nav/SocialIcons';
+import { MobileMenu } from './nav/MobileMenu';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
-  const isHomePage = location.pathname === '/';
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,13 +21,40 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navigationItems = [
-    { title: 'About', path: '/about' },
-    { title: 'Services', path: '/services' },
-    { title: 'Compliance', path: '/compliance' },
-    { title: 'Certifications', path: '/certifications' },
-    { title: 'Media', path: '/media' },
-    { title: 'Contact', path: '/contact' },
+  const toggleDropdown = (menu: string) => {
+    setActiveDropdown(activeDropdown === menu ? null : menu);
+  };
+
+  const navLinks = [
+    { 
+      title: 'About', 
+      link: '/about',
+      dropdown: false
+    },
+    { 
+      title: 'Services', 
+      link: '/services',
+      dropdown: false
+    },
+    { 
+      title: 'Compliance', 
+      link: '/compliance',
+      dropdown: false
+    },
+    { 
+      title: 'Resources', 
+      link: '#',
+      dropdown: true,
+      dropdownItems: [
+        { title: 'Certifications', link: '/certifications' },
+        { title: 'Media', link: '/media' }
+      ]
+    },
+    { 
+      title: 'Contact', 
+      link: '/contact',
+      dropdown: false
+    },
   ];
 
   return (
@@ -42,72 +65,56 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Left side - Logo (only on non-home pages) */}
-          <div className="flex items-center">
-            {!isHomePage && (
-              <Link to="/" className="flex items-center">
-                <span className={`text-2xl font-bold ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}>
-                  NSS
-                </span>
-              </Link>
-            )}
-          </div>
+          {/* Logo */}
+          <Link to="/" className="flex items-center">
+            <div className="flex flex-col items-start">
+              <div className={`text-3xl font-bold ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}>nss</div>
+              <div className={`text-xs uppercase tracking-wider font-medium -mt-1 ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}>
+                NETHRA SECURITY SERVICES
+              </div>
+            </div>
+          </Link>
 
-          {/* Right side - Navigation dropdown and Quote button */}
-          <div className="flex items-center space-x-4">
-            {isHomePage && (
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button 
-                    variant="ghost" 
-                    size="sm"
-                    className={`${
-                      isScrolled 
-                        ? 'text-nethra-navy hover:text-nethra-accent' 
-                        : 'text-white hover:text-nethra-accent'
-                    } flex items-center space-x-1`}
-                  >
-                    <span>Menu</span>
-                    <ChevronDown size={16} />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent 
-                  align="end" 
-                  className="w-48 bg-white shadow-lg border border-gray-200"
-                >
-                  {navigationItems.map((item) => (
-                    <DropdownMenuItem key={item.title} asChild>
-                      <Link 
-                        to={item.path}
-                        className="w-full px-4 py-2 text-nethra-navy hover:bg-nethra-light hover:text-nethra-accent transition-colors cursor-pointer"
-                      >
-                        {item.title}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            )}
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center">
+            <NavLinks 
+              navLinks={navLinks}
+              isScrolled={isScrolled}
+              activeDropdown={activeDropdown}
+              toggleDropdown={toggleDropdown}
+            />
             
-            <Button 
-              size="sm" 
-              variant={isScrolled ? "outline" : "secondary"} 
-              className={`${!isScrolled && 'text-nethra-navy bg-white hover:bg-white/90'}`}
-              asChild
-            >
-              <Link to="/contact">Get a Quote</Link>
-            </Button>
+            <div className="ml-8 flex items-center">
+              <SocialIcons isScrolled={isScrolled} />
+              <Button 
+                size="sm" 
+                variant={isScrolled ? "outline" : "secondary"} 
+                className={`ml-4 ${!isScrolled && 'text-nethra-navy bg-white hover:bg-white/90'}`}
+                asChild
+              >
+                <Link to="/contact">Get a Quote</Link>
+              </Button>
+            </div>
           </div>
 
-          {/* Mobile Menu Button - kept for potential future use */}
+          {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden hidden ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}
+            className={`lg:hidden ${isScrolled ? 'text-nethra-navy' : 'text-white'}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      <MobileMenu 
+        isOpen={isMenuOpen}
+        navLinks={navLinks}
+        activeDropdown={activeDropdown}
+        toggleDropdown={toggleDropdown}
+        onClose={() => setIsMenuOpen(false)}
+      />
     </nav>
   );
 };
